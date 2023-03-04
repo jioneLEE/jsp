@@ -4,7 +4,7 @@
     pageEncoding="UTF-8"%>
 
 <%@ include file="header.jsp" %>
-
+<div align="center">
 <h1> 메인페이지 </h1>
 
 <%
@@ -25,6 +25,7 @@ Object obj = session.getAttribute("idx");
 	</tr>
 <%} %>
 </table>
+</div>
 
 </body>
 </html>

@@ -10,7 +10,7 @@
     }
   
     ArrayList<MemberVO> list = MemberDAO.getInstance().getAllMemberList();
-    
+
     %>
 
 
@@ -19,7 +19,7 @@
  <h1> 관리자 페이지(회원정보 확인하기)</h1>
   <div> <a href="02_main.jsp"> 메인 화면 가기 </a></div>
   <br>
- <table>
+ <table border="1">
  	<tr>
  		<td>아이디</td>
 		<td>패스워드</td>
