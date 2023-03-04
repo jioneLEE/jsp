@@ -1,20 +1,14 @@
  -- primary key 데이터가 유일하고 비어있지 않는 데이터 not null 
 -- unique key null은 가능하나 데이터 중복은 허용하지않음 
--- auto_increment 자동으로 1씩 증가
--- 테이블 만들때 
--- 컬럼이름 자료형 속성들,, (속성 없으면 기본값 null )
-drop table member;
 create table member(
-  -- 속성값을 주는 첫번째방법 
     num int primary key auto_increment, 
     id varchar(20) not null, 
     pass varchar(20) not null,
     name varchar(20) not null,
     age int not null,
     email varchar(30) not null,
-    phone varchar(30) not null,  
-    -- 속성을 주는 두번째 방법 
-    unique key(id) --id 중복을 허용하지않는다 
+    phone varchar(30) not null,    
+    unique key(id)
 );
 
 -- 명령할 쿼리 영역 alt + x => 쿼리문 실행 
@@ -33,7 +27,6 @@ insert into member(id,pass,name,age,email,phone) values('test6','6666','테스�
 insert into member(id,pass,name,age,email,phone) values('test7','7777','테스트7',37,'test7@test.com','010-1111-1234');
 
 select * from member;  -- 뷰테이블 컬럼 이름 수정이 가능하다 --> 일시적인 수정 -> 실제 테이블 컬럼값 바꾼건 아니다 
-
 
 -- update 수정하기 
 update member set age = 30 where id ='test1';

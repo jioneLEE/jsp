@@ -22,11 +22,8 @@
 		vo.setEmail(email);
 		vo.setPhone(phone);
 		
-		// db값 추가 명령 
 		int cnt=MemberDAO.getInstance().memberInsert(vo);
-		
-		
-		if(cnt>0) {
+			if(cnt>0) {
 		    	// 가입성공		  
 		    	response.sendRedirect("01_memberlist.jsp");
 		}else {

@@ -8,8 +8,6 @@
 </head>
 <body>
 <%
-// jsp 안에 session 내장 되어 있어서 
-// 그냥 사용가능 
    session.removeAttribute("log");
 %>
 <script>

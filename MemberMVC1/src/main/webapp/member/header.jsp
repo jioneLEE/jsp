@@ -14,7 +14,7 @@
             <div class="w-50 py-3" onclick="location.href='01_memberlist.jsp'"> 회원목록 </div>
     
             
-            <%if(%> ${log ne null } <%){ %>
+            <%if(session.getAttribute("log")==null){ %>
             <div class="w-25 py-3" onclick="location.href='04_memberInsert.jsp'"> 회원가입 </div>
             <div class="w-25 py-3"  onclick="location.href='02_memberLogin.jsp'"> 로그인 </div>
             <%}else{ %>
